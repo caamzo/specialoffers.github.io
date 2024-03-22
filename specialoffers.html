@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #FF66C4, #FFDE59); /* Pink to Yellow ombre */
+            color: #fff; /* Text color */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .header {
+            background: linear-gradient(90deg, #FF66C4, #FFDE59); /* Pink to Yellow ombre */
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+        .menu-item {
+            margin-right: 20px;
+        }
+        .menu-item a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .menu-item a:hover {
+            color: #ffd700; /* Change the color on hover */
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the search bar horizontally */
+            margin-top: 20px; /* Add some space between content and search bar */
+        }
+        .search-container input[type=text] {
+            padding: 10px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .logo {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .logo img {
+            max-width: 200px; /* Adjust the size of the logo */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the logo horizontally */
+        }
+        .image-cycle {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-wrap: wrap; /* Allow images to wrap to next line if there are more */
+        }
+        .image-cycle img {
+            max-width: 33.33%; /* Set each image to be one-third of the container */
+            height: auto;
+            margin: 10px; /* Add some space between images */
+            transition: transform 0.5s ease;
+            transform: translateX(0); /* Ensure all images start at the initial position */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="menu">
+            <div class="menu-item dropdown">
+                <a href="#">Menu</a>
+                <div class="dropdown-content">
+                     <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/mainpagetest.html#">Home</a>
+                    <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/parking.html">Parking</a>
+                    <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/Map.html">Map</a>
+                    <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/Map.html">Shopping</a>
+                    <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/banks.html">Banks</a>
+                    <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/specialoffers.html">Food</a>
+                    <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/specialoffers.html">Special Offers</a>
+                    <a href="file:///O:/A%202023/Unit%2010/hci%20test%20website/help.html">Help</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="file:///O:/AMAP_SHOPPING-removebg-preview.png" alt="Special Offers Logo">
+        </div>
+       
+    </div>
+    <div class="container">
+        <h1>Welcome to Special Offers</h1>
+        <p>Explore the latest special offers available in the shopping center.
+		You can search for offers below:</p>
+        <div class="search-container"> <!-- Added search bar here -->
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </div>
+    <div class="image-cycle">
+        <img src="file:///O:/f9cdb7_fea81483eaab4ed99fe3cf9e9.jpg" alt="Offer 1">
+        <img src="file:///O:/W3_23_WEBSITE_CAROUSEL_DESKTOP_WOW_BM_2000X650.jpg" alt="Offer 2">
+        <img src="file:///O:/Dominos-NHS-Discount-Banner.jpg" alt="Offer 3">
+		<img src="file:///O:/Untitled%20design%20(7).png" alt="Offer 4">
+		<img src="file:///O:/Chipotle_Friends_BOGO___July_6_f.jpg" alt="Offer 5">
+		<img src="file:///O:/3329ef7ed996b26801b78a8e9a5e0dcf.jpg" alt="Offer 6">
+		<!-- Add more offer images here -->
+    </div>
+</body>
+</html>
